@@ -1,18 +1,48 @@
+/* Prerequisites ( Fonts / Body ) */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body {
-background: #20262E;
-padding: 20px;
-font-family: 'Montserrat', Helvetica;
+    background: #20262E;
+    padding: 20px;
+    font-family: 'Montserrat', Helvetica;
 }
 
-#app, .app {
-background: #fff;
-border-radius: 4px;
-padding: 10px;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-transition: all 1s;
+/* End Section */
+/* Positioning */
+
+.centered{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pos-right{
+    margin-left: 100%;
+    margin-right: 0%;
+    text-align: right;
+}
+
+.pos-right{
+    margin-left: 0%;
+    margin-right: 100%;
+    text-align: left;
+}
+
+/* Main Application */
+
+#app, .app{
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.story-app{
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 1s;
+    width: 66.66666%;
 }
 
 .inputbox{
@@ -20,36 +50,72 @@ transition: all 1s;
     transition: all 1s;
 }
 
-.seperator{
-background:rgb(50,50,50);
-height: 5px;
-width: 100%;
+input{
+    margin-right: 5px;
+    transition: all 1s;
 }
-
-.spacer-small{
-    width: 25px;
-    height:auto;
-}
-
-li {
-margin: 8px 0;
-}
-
-h2 {
-font-weight: bold;
-margin-bottom: 15px;
-}
-
-.done {
-color: rgba(0, 0, 0, 0.3);
-text-decoration: line-through;
-}
-
-input {
-margin-right: 5px;
-transition: all 1s;
-}
-
+    
 #output{
     transition: all 1s;
 }
+/* End Section */
+/* Seperators / Spacers */
+
+.seperator{
+    background: #20262E;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.seperator-small{
+    background: #20262E;
+    height: 5px;
+    width: 33.333%;
+    border-radius: 5px;
+}
+
+.spacer-small-height{
+    width: 100%;
+    height: 15px;
+}
+
+/* End Section */
+/* HTML Tags / Custom Tags */
+/* HTML Tags */
+li{
+    margin: 8px 0;
+}
+
+h2{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer{
+    background: #eee;
+    color: black;
+    font-size: small;
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 1s;
+    width: 66.66666%;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Custom Tags */
+
+storytitle{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+storycontent{
+    font-size: medium;
+}
+
+/* End Section */

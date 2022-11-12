@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Document</title>
+        <title>Changelog</title>
         <link rel="stylesheet" href="../style.css"/>
+        <script>
+            setTimeout(() => {
+                document.getElementById('youclickedhere').addEventListener('click',()=>{
+                    location.replace('../you-clicked-here/')
+                })
+                document.getElementById('mainclicked1').addEventListener('click',()=>{
+                    location.href = '../'
+                })
+                document.getElementById('mainclicked2').addEventListener('click',()=>{
+                    location.href = '../'
+                })
+            }, 10);
+        </script>
     </head>
     <body>
-        <div class="app">
-            <div class="story" id="1">Story-1</div>
-            <div class="story" id="2">Story-2</div>
+        <div class="story-app centered">
+            <h1><b>Changelog</b></h1>
+            <div class="seperator centered"></div><br>
+            <story>
+                <storytitle>
+                    Release v1
+                </storytitle><br><br>
+                <storycontent>
+                    This was the first <b><i>release</i></b> of <code>textalterer!</code>
+                </storycontent>
+            </story>
+            <br/><br/>
+            <div class="seperator-small centered"></div><br>
+            <story>
+                <storytitle>
+                    Beta
+                </storytitle><br><br>
+                <storycontent>
+                    This was the <b><i>beta stage</i></b> of <code>textalterer!</code>
+                </storycontent>
+            </story>
+            <br/><br/>
         </div>
+        <footer class="centered" id="footer">
+            <span id="mainclicked1">Click </span><span id='youclickedhere'>here</span><span id="mainclicked2"> to return back home.</span>
+        </footer>
     </body>
 </html>

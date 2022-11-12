@@ -17,6 +17,9 @@ setTimeout(() => {
             document.getElementById('uncaps').checked = false
         }
     })
+    document.getElementById('footer').addEventListener('click',()=>{
+        location.href = '/changelog/'
+    })
 }, 100);
 setInterval(() => {
     if (document.getElementById('inputbox').value.length>20){
