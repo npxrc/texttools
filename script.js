@@ -34,14 +34,24 @@ setInterval(() => {
     run()
 }, 10);
 function run(){
+    /*// Caps |
+    //        |
+    *///      V
     if (document.getElementById('caps').checked){
         let input = document.getElementById('inputbox').value.toString().toUpperCase()
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
+    /*// UNcaps |
+    //          |
+    *///        V 
     else if (document.getElementById('uncaps').checked){
         let input = document.getElementById('inputbox').value.toString().toLowerCase()
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
-    } else if (document.getElementById('altcaps').checked){
+    }
+    /*// Alt Caps |
+    //            |
+    *///          V 
+    else if (document.getElementById('altcaps').checked){
         let input = document.getElementById('inputbox').value.toString().toLowerCase()
         var chars = input.toLowerCase().split("");
         for (var i = 1; i < chars.length; i += 2) {chars[i] = chars[i].toUpperCase()}
