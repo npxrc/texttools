@@ -61,6 +61,7 @@ input{
     
 #output{
     transition: all 1s;
+    word-wrap: break-word;
 }
 /* End Section */
 /* Seperators / Spacers */

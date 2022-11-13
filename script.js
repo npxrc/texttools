@@ -5,6 +5,7 @@ setTimeout(() => {
         document.getElementById('tobase64').checked = false
         document.getElementById('frombase64').checked = false
         document.getElementById('urlfriendly').checked = false
+        run()
     })
     document.getElementById('uncaps').addEventListener('click',()=>{
         document.getElementById('caps').checked = false
@@ -12,6 +13,7 @@ setTimeout(() => {
         document.getElementById('tobase64').checked = false
         document.getElementById('frombase64').checked = false
         document.getElementById('urlfriendly').checked = false
+        run()
     })
     document.getElementById('altcaps').addEventListener('click',()=>{    
         document.getElementById('caps').checked = false
@@ -19,6 +21,7 @@ setTimeout(() => {
         document.getElementById('tobase64').checked = false
         document.getElementById('frombase64').checked = false
         document.getElementById('urlfriendly').checked = false
+        run()
     })
     document.getElementById('tobase64').addEventListener('click',()=>{
         document.getElementById('caps').checked = false
@@ -26,6 +29,7 @@ setTimeout(() => {
         document.getElementById('altcaps').checked = false
         document.getElementById('frombase64').checked = false
         document.getElementById('urlfriendly').checked = false
+        run()
     })
     document.getElementById('frombase64').addEventListener('click',()=>{
         document.getElementById('caps').checked = false
@@ -33,6 +37,7 @@ setTimeout(() => {
         document.getElementById('altcaps').checked = false
         document.getElementById('tobase64').checked = false
         document.getElementById('urlfriendly').checked = false
+        run()
     })
     document.getElementById('urlfriendly').addEventListener('click',()=>{
         document.getElementById('caps').checked = false
@@ -40,7 +45,8 @@ setTimeout(() => {
         document.getElementById('altcaps').checked = false
         document.getElementById('tobase64').checked = false
         document.getElementById('frombase64').checked = false
-})
+        run()
+    })
     document.getElementById('userinputbox').addEventListener('keydown',updateoutput)
     document.getElementById('userinputbox').addEventListener('keypress',updateoutput)
     document.getElementById('userinputbox').addEventListener('keyup',updateoutput)
@@ -65,21 +71,18 @@ function updateoutput(){
 }
 function run(){
     /*// Caps |
-    //        |
     *///      V
     if (document.getElementById('caps').checked){
         let input = document.getElementById('userinputbox').value.toString().toUpperCase()
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
     /*// UNcaps |
-    //          |
     *///        V 
     else if (document.getElementById('uncaps').checked){
         let input = document.getElementById('userinputbox').value.toString().toLowerCase()
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
     /*// Alt Caps |
-    //            |
     *///          V 
     else if (document.getElementById('altcaps').checked){
         let input = document.getElementById('userinputbox').value.toString().toLowerCase()
@@ -90,7 +93,6 @@ function run(){
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
     /*/// TO Base64 |
-    //              |
     /*///           V
     else if (document.getElementById('tobase64').checked){
         let input = document.getElementById('userinputbox').value.toString().toLowerCase()
@@ -98,7 +100,6 @@ function run(){
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
     /*/// FROM Base64 |
-    //                |
     /*///             V
     else if (document.getElementById('frombase64').checked){
         let input = document.getElementById('userinputbox').value.toString().toLowerCase()
@@ -106,7 +107,6 @@ function run(){
         document.getElementById('output').innerHTML = "<code style=\"font-size: x-large;\">Output</code>\n<div class=\"seperator\"></div><br>\n<output id=\"outputbox\">"+input+"</output><br>\n<div class=\"seperator\"></div><br>\n<br>"
     }
     /*/// URL Friendly |
-    //                 |
     /*///              V
     else if (document.getElementById('urlfriendly').checked){
         let input = document.getElementById('userinputbox').value.toString().toLowerCase()
